@@ -1,0 +1,13 @@
+{
+    "name": "{{vendor}}/{{package}}",
+    "description": "{{package}} package description",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "user",
+            "email": "user@example.com"
+        }
+    ],
+    "require": {}
+}

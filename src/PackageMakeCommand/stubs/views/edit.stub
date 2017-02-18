@@ -1,0 +1,14 @@
+@extends('{{package}}::layout')
+
+@section('contents')
+	@include('{{package}}::error')
+	<form action="/{{packagePlural}}/{{ ${{package}}->id }}" method="POST">
+		{{ csrf_field()}}
+		<input name="_method" type="hidden" value="PUT">
+		@include('{{package}}::{{packagePlural}}.partials.formModel')
+		<hr>
+		<div class="control">
+		    <a href="/{{packagePlural}}/{{ ${{package}}->id }}" class="button is-default">show details</a>
+		</div>
+	</form>
+@stop

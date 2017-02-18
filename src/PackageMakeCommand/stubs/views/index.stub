@@ -1,0 +1,13 @@
+@extends('{{package}}::layout')
+
+@section('contents')
+	@if (isset(${{packagePlural}}) && ${{packagePlural}}->count())
+		<div class="columns is-multiline is-mobile">
+			@foreach (${{packagePlural}} as ${{package}})
+				@include('{{package}}::{{packagePlural}}.partials.message', compact('{{package}}'))
+			@endforeach
+		</div>
+	@else
+		there is nothing to show here.
+	@endif
+@stop

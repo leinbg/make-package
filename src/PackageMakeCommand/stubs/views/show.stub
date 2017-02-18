@@ -1,0 +1,22 @@
+@extends('{{package}}::layout')
+
+@section('contents')
+	<header>
+		<h1 class="title">
+			{{ ${{package}}->name }}
+			<span class="subtitle">
+				{{ ${{package}}->created_at }}
+			</span>
+		</h1>
+	</header>
+	<hr>
+	<article>
+		<h3 class="subtitle">Description</h3>
+		<div class="container description">
+			{{ ${{package}}->description }}
+		</div>
+	</article>
+	<hr>
+	<a href="/{{packagePlural}}" class="button is-default">back</a>
+	<a href="/{{packagePlural}}/{{ ${{package}}->id }}/edit" class="button is-primary">edit</a>
+@stop

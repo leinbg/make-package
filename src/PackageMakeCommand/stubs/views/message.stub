@@ -1,0 +1,17 @@
+<div class="column is-half-desktop is-half-tablet is-full-mobile">
+	<article class="message @if(${{package}}->finished)is-primary @endif">
+		<div class="message-header">
+			<a href="/{{packagePlural}}/{{ ${{package}}->id }}/edit" style="text-decoration: none;">
+				{{ ${{package}}->name }}
+			</a>
+			<form action="/{{packagePlural}}/{{ ${{package}}->id }}" method="POST">
+				{{ csrf_field()}}
+				<input name="_method" type="hidden" value="DELETE">
+				<button type="submit" class="delete"></button>
+			</form>		
+		</div>
+		<div class="message-body">
+			{{ ${{package}}->description }}
+		</div>
+	</article>
+</div>

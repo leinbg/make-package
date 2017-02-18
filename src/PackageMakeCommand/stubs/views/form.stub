@@ -1,0 +1,13 @@
+<div class="control">
+    <label for="name" class="label">Name:</label>
+    <input type="text" id="name" name="name" class="input"
+    	   value="@if(isset(${{package}})){{ ${{package}}->name }}@else{{ old('name') }}@endif">
+</div>
+<div class="control">
+    <label for="description" class="label">Description:</label>
+    <textarea id="description" name="description" class="textarea">@if(isset(${{package}})){{ ${{package}}->description }}@else{{ old('description') }}@endif</textarea>
+</div>
+
+<div class="control">
+    <button class="button is-primary">submit</button>
+</div>

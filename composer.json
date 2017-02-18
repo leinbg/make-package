@@ -1,0 +1,21 @@
+{
+    "name": "templei/command",
+    "description": "artisan command make package with bulma and scaffolding",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "leiw",
+            "email": "leiwgz@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.4",
+        "illuminate/console": "~5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Templei\\Command\\": "src/"
+        }
+    }
+}

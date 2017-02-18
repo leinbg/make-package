@@ -1,0 +1,38 @@
+<?php
+
+namespace {{namespace}}Providers;
+
+use Illuminate\Support\ServiceProvider;
+
+class {{packageUc}}ServiceProvider extends ServiceProvider
+{
+    /**
+     * Bootstrap the application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        // routes
+        $this->loadRoutesFrom(__DIR__ . '/../../routes/web.php');
+
+        // migrations
+        $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
+
+        // load and publish views
+        $this->loadViewsFrom(__DIR__ . '/../../resources/views', '{{package}}');
+        $this->publishes([
+            __DIR__ . '/../../resources/views' => resource_path('views/vendor/{{package}}'),
+        ]);
+    }
+
+    /**
+     * Register the application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+     
+    }
+}

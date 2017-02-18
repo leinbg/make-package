@@ -1,0 +1,9 @@
+@extends('{{package}}::layout')
+
+@section('contents')
+	@include('{{package}}::error')
+	<form action="/{{packagePlural}}" method="POST">
+		{{ csrf_field()}}
+		@include('{{package}}::{{packagePlural}}.partials.formModel')
+	</form>
+@stop

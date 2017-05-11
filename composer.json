@@ -1,6 +1,7 @@
 {
     "name": "leinbg/make-package",
     "description": "artisan command make package with basic scaffolding",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Templei\Command\PackageMakeCommand;
+namespace Leinbg\Command\MakePackage\PackageMakeCommand;
 
 use Illuminate\Support\Str;
 use Illuminate\Console\Command;
-use Templei\Command\PackageMakeCommand\PackageFactory as Factory;
-use Templei\Command\PackageMakeCommand\Models\Package as Model;
+use Leinbg\Command\MakePackage\PackageFactory as Factory;
+use Leinbg\Command\MakePackage\Models\Package as Model;
 
 class PackageMakeCommand extends Command
 {
@@ -14,8 +14,8 @@ class PackageMakeCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'make:package 
-                            {vendor : packge vendor} 
+    protected $signature = 'make:package
+                            {vendor : packge vendor}
                             {name : package name}';
 
     /**

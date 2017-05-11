@@ -1,6 +1,6 @@
 <?php
 
-namespace Templei\Command\PackageMakeCommand\Models;
+namespace Leinbg\Command\MakePackage\Models;
 
 use Illuminate\Support\Str;
 
@@ -56,7 +56,7 @@ class Package
 
     /**
      * Get the package base directory
-     * 
+     *
      * @return string
      */
     public function getPackageBaseDir()

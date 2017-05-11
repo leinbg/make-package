@@ -1,6 +1,6 @@
 {
-    "name": "templei/command",
-    "description": "artisan command make package with bulma and scaffolding",
+    "name": "leinbg/makePackage",
+    "description": "artisan command make package with basic scaffolding",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Templei\\Command\\": "src/"
+            "Leinbg\\Command\\MakePackage\\": "src/"
         }
     }
 }

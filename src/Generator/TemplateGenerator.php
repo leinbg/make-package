@@ -1,5 +1,5 @@
 <?php
-namespace Templei\Command\PackageMakeCommand\Generator;
+namespace Leinbg\Command\MakePackage\Generator;
 
 class TemplateGenerator extends PackageGenerator implements Generatable
 {

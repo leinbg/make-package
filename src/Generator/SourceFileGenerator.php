@@ -1,5 +1,5 @@
 <?php
-namespace Templei\Command\PackageMakeCommand\Generator;
+namespace Leinbg\Command\MakePackage\Generator;
 
 class SourceFileGenerator extends PackageGenerator implements Generatable
 {
@@ -60,7 +60,7 @@ class SourceFileGenerator extends PackageGenerator implements Generatable
             $path = $source['path'];
             $file = $source['file'];
             $stub = $source['stub'];
-            $absFilePath = $packageBaseDir . $path . $file; 
+            $absFilePath = $packageBaseDir . $path . $file;
             $stubPath = '/stubs/src/' . $stub;
 
             file_put_contents(
@@ -71,7 +71,7 @@ class SourceFileGenerator extends PackageGenerator implements Generatable
 
     /**
      * Get compiled Sources
-     */ 
+     */
     protected function getCompiledSources()
     {
         return $this->compileArray($this->sources);
@@ -80,7 +80,7 @@ class SourceFileGenerator extends PackageGenerator implements Generatable
     /**
      * compile an array
      * @todo: performance , array to string, compile string, string to array
-     * 
+     *
      * @param array $array
      * @return array
      */

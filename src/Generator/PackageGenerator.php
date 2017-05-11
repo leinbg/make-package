@@ -1,9 +1,9 @@
 <?php
 
-namespace Templei\Command\PackageMakeCommand\Generator;
+namespace Leinbg\Command\MakePackage\Generator;
 
 use Illuminate\Support\Str;
-use Templei\Command\PackageMakeCommand\Models\Package;
+use Leinbg\Command\MakePackage\Models\Package;
 
 abstract class PackageGenerator implements Generatable
 {
@@ -50,7 +50,7 @@ abstract class PackageGenerator implements Generatable
 
 	/**
      * Get the package base directory
-     * 
+     *
      * @return string
      */
     protected function getPackageBaseDir()

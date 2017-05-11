@@ -1,10 +1,10 @@
 <?php
 
-namespace Templei\Command\Providers;
+namespace Leinbg\Command\MakePackage\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Templei\Command\PackageMakeCommand\Models\Package;
-use Templei\Command\PackageMakeCommand\PackageMakeCommand;
+use Leinbg\Command\MakePackage\Models\Package;
+use Leinbg\Command\MakePackage\PackageMakeCommand;
 
 class ConsoleServiceProvider extends ServiceProvider
 {

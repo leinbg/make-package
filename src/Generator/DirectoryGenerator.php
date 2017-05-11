@@ -1,5 +1,5 @@
 <?php
-namespace Templei\Command\PackageMakeCommand\Generator;
+namespace Leinbg\Command\MakePackage\Generator;
 
 class DirectoryGenerator extends PackageGenerator implements Generatable
 {

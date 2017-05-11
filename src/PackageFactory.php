@@ -1,6 +1,6 @@
 <?php
 
-namespace Leinbg\Command\MakePackage\PackageMakeCommand;
+namespace Leinbg\Command\MakePackage;
 
 use Leinbg\Command\MakePackage\Generator\DirectoryGenerator;
 use Leinbg\Command\MakePackage\Generator\TemplateGenerator;

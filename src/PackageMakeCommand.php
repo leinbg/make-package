@@ -1,6 +1,6 @@
 <?php
 
-namespace Leinbg\Command\MakePackage\PackageMakeCommand;
+namespace Leinbg\Command\MakePackage;
 
 use Illuminate\Support\Str;
 use Illuminate\Console\Command;

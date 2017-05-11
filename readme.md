@@ -2,6 +2,11 @@
 create laravel package scaffolder
 
 ## how to use
+* add command service provider to app config
+
+```
+Leinbg\Command\MakePackage\Providers\ConsoleServiceProvider::class,
+```
 * create package
 
 ```
